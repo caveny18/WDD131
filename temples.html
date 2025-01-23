@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
+    <!-- Archivos CSS -->
     <link rel="stylesheet" href="teemples.css">
     <link rel="stylesheet" href="temples-large.css">
+    <!-- Archivo JS -->
     <script src="temples.js" defer></script>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1>Temple Album</h1>
-        <button id="hamburgerButton">☰</button>
+        <button id="hamburgerButton" aria-label="Toggle navigation menu">☰</button>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" aria-label="Go to Home">Home</a></li>
+                <li><a href="#" aria-label="View Old Temples">Old</a></li>
+                <li><a href="#" aria-label="View New Temples">New</a></li>
+                <li><a href="#" aria-label="View Large Temples">Large</a></li>
+                <li><a href="#" aria-label="View Small Temples">Small</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Contenido principal -->
     <main>
         <h2>Home</h2>
-        <section class="gallery">
-            <!-- Sección de imágenes del templo -->
+        <section class="gallery" aria-label="Temple Gallery">
+            <!-- Bloque de imágenes del templo -->
             <figure>
                 <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
                 <figcaption>Salt Lake City Temple</figcaption>
             </figure>
-            <!-- Repite el bloque <figure> para completar 9 imágenes -->
             <figure>
                 <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
                 <figcaption>Salt Lake City Temple</figcaption>
@@ -49,8 +52,9 @@
             </figure>
         </section>
     </main>
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; <span id="currentYear"></span> Carlos Daniel Ruiz 🌍 Lima,Perú</p>
+        <p>&copy; <span id="currentYear"></span> Carlos Daniel Ruiz 🌍 Lima, Perú</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
