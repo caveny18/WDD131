@@ -1,100 +1,97 @@
 /* General */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6; 
+    text-align: center;
 }
 
 header {
-    background-color: #4A007E;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-}
-
-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-#hamburgerButton {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    background: #4c0863;
     color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease; 
-}
-
-#hamburgerButton:hover {
-    transform: scale(1.2);
+    padding: 10px 20px;
 }
 
 nav ul {
-    display: none;
-    flex-direction: column;
     list-style: none;
-    background-color: #4A007E;
-    padding: 1rem;
-    margin: 0;
-    border-top: 1px solid white;  
-}
-
-nav ul.visible {
+    padding: 0;
     display: flex;
 }
 
-nav a {
-    text-decoration: none;
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
     color: white;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
-nav a:hover {
-    color: #FFC107; 
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
-
-main {
-    padding: 1rem;
-    text-align: center;
-}
-
+/* Gallery Styles */
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-figure {
-    margin: 0;
-    text-align: center;
-}
-
-figure img {
-    max-width: 100%;
+.gallery img {
+    width: 100%;
     height: auto;
-    border: 2px solid #4A007E;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
 }
 
 figcaption {
-    background-color: #f3f3f3;
-    padding: 0.5rem;
-    color: #333;
-    font-size: 0.9rem;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #4A007E;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem; 
+    text-align: center; /* Centra el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100px; /* Ajusta según sea necesario */
+    background-color:  #4c0863; /* Opcional: color de fondo */
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    color: white
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #e5e5e5;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+    
+    nav ul.open {
+        display: flex;
+    }
+    
+    #menuButton {
+        display: block;
+    }
 }

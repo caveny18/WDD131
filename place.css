@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    background-color: #D50000;
+    color: white;
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+    min-height: 50vh; /* Ajusta la altura para que sea proporcional */
+    background: url('freecompress-adorable-lemurien-d.jpg') no-repeat center center/cover;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 300px;
+    text-align: left;
+}
+
+.card h3 {
+    background-color: #388E3C;
+    color: white;
+    padding: 0.8em;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    margin: -1.5em -1.5em 1em -1.5em;
+    font-size: 1.8em;
+}
+
+.footer {
+    background-color: #D50000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0.3em 0;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%; /* Ocupa casi toda la pantalla */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .info {
+        gap: 40px;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+}

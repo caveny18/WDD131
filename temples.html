@@ -3,59 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <!-- Archivos CSS -->
+    <title>Temples</title>
     <link rel="stylesheet" href="teemples.css">
-    <link rel="stylesheet" href="temples-large.css">
-    <!-- Archivo JS -->
-    <script src="temples.js" defer></script>
+    <link rel="stylesheet" href="temples-large.css" media="(min-width: 768px)">
 </head>
 <body>
-    <!-- Encabezado -->
     <header>
-        <h1>Temple Album</h1>
-        <button id="hamburgerButton" aria-label="Toggle navigation menu">☰</button>
+        <h1>Temples</h1>
+        <button id="menuButton">☰</button>
         <nav>
-            <ul>
-                <li><a href="#" aria-label="Go to Home">Home</a></li>
-                <li><a href="#" aria-label="View Old Temples">Old</a></li>
-                <li><a href="#" aria-label="View New Temples">New</a></li>
-                <li><a href="#" aria-label="View Large Temples">Large</a></li>
-                <li><a href="#" aria-label="View Small Temples">Small</a></li>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">small</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Contenido principal -->
+    
     <main>
-        <h2>Home</h2>
-        <section class="gallery" aria-label="Temple Gallery">
-            <!-- Bloque de imágenes del templo -->
-            <figure>
-                <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
-                <figcaption>Salt Lake City Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
-                <figcaption>Salt Lake City Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
-                <figcaption>Salt Lake City Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
-                <figcaption>Salt Lake City Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="Salt_Lake_LDS_Temple.jpg" alt="Salt Lake City Temple">
-                <figcaption>Salt Lake City Temple</figcaption>
-            </figure>
+        <section class="gallery">
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 1"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 2"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 3"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 4"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 5"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 6"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 7"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 8"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="Salt_Lake_LDS_Temple.jpg" alt="Temple 9"><figcaption>Salt Lake Temple</figcaption></figure>
         </section>
     </main>
-    <!-- Pie de página -->
+    
     <footer>
         <p>&copy; <span id="currentYear"></span> Carlos Daniel Ruiz 🌍 Lima, Perú</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
+    
+    <script src="temples.js" defer></script>
+    
 </body>
 </html>
