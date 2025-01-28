@@ -8,10 +8,12 @@
 
     
     .gallery {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem; 
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
     }
-
     
     footer {
         display: flex;
