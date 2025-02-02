@@ -1,48 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
+    <title>Perú - Cultura y Naturaleza</title>
+    <meta name="description" content="Explora la cultura, historia y naturaleza de Perú.">
     <link rel="stylesheet" href="place.css">
+    <script defer src="place.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Encabezado -->
-        <div class="header">
-            <h1>Madagascar</h1>
-        </div>
+    <header>
+        <h1>Perú</h1>
+    </header>
 
-        <!-- Sección de imagen con tarjetas sobrepuestas -->
-        <div class="image-section">
-            <div class="info">
-                <div class="card">
-                    <h3>Data</h3>
-                    <p><strong>Area:</strong> 587,041 sq km</p>
-                    <p><strong>Population:</strong> 27,691,018</p>
-                    <p><strong>Capital:</strong> Antananarivo</p>
-                    <p><strong>Languages:</strong> Malagasy, French</p>
-                    <p><strong>Currency:</strong> Malagasy Ariary</p>
-                    <p><strong>Time Zone:</strong> UTC+3</p>
-                    <p><strong>Calling Code:</strong> +261</p>
-                    <p><strong>Internet TLD:</strong> .mg</p>
-                </div>
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/compres" media="(max-width: 600px)" sizes="100vw">
+                <source srcset="images/machu-picchu-ruins_11zon.webp" media="(min-width: 601px)" sizes="100vw">
+                <img src="images/machu-picchu-ruins_11zon.webp" alt="Paisaje de Perú">
+            </picture>
+        </section>
 
-                <div class="card">
-                    <h3>Weather</h3>
-                    <p><strong>Temperature:</strong> 10°C</p>
-                    <p><strong>Conditions:</strong> Partly Cloudy</p>
-                    <p><strong>Wind:</strong> 5 km/h</p>
-                    <p><strong>Wind Chill:</strong> 9.8°C</p>
-                </div>
-            </div>
-        </div>
+        <section id="clima">
+            <h2>
+                <span class="texto-clima">Clima ⛅</span>
+                <img src="images/Weather.svg" alt="Icono móvil" class="icono-movil">
+            </h2>
+            <p>Temperatura: <span id="temp">15</span>°C</p>
+            <p>Viento: <span id="viento">10</span> km/h</p>
+            <p>Sensación térmica: <span class="windchill">N/A</span></p>
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>©2025 Ruiz Cabrera Carlos Daniel • Perú</p>
-            <p>Last Modification: 02/08/2024 22:47:47</p>
-        </div>
-    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> | Última modificación: <span id="last-mod"></span></p>
+    </footer>
 </body>
 </html>
