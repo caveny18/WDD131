@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Boda - Contribuye a los Regalos</title>
+    <link rel="stylesheet" href="Wedding.css">
+</head>
+<body>
+    <header>
+        <h1>JIMENA & CARLOS</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <ul id="nav-list" class="nav-list">
+                <li><a href="#detalles">Detalles</a></li>
+                <li><a href="#contribuir">Contribuir</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="images/SON7240-_2_.webp" alt="Boda romántica" loading="lazy">
+        <div class="overlay">
+            <h2>¡Nos casamos!</h2>
+            <p>20 MARZO 2030</p>
+            <p>¡Te esperamos!</p>
+        </div>
+    </section>
+
+    <section id="contribuir">
+        <h2>Contribuye con un regalo</h2>
+        <div id="gift-list" class="gift-list"></div>
+        
+        <form id="contribution-form">
+            <label for="gift-choice">Elige un regalo:</label>
+            <select id="gift-choice"></select>
+
+            <label for="amount">Monto ($):</label>
+            <input type="number" id="amount">
+
+            <button type="submit">Contribuir</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Boda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Wedding.js"></script>
+</body>
+</html>
