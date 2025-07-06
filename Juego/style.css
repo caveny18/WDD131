@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fffaf7;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+header h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3em;
+  color: #880e4f;
+  margin-bottom: 8px;
+}
+
+header h2 {
+  text-align: center;
+  color: #ad1457;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f8bbd0;
+  border-radius: 5px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #c2185b;
+  transition: width 0.8s ease;
+}
+
+.descubre {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#descubrir-btn {
+  padding: 14px 32px;
+  background-color: #d81b60;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 6px 16px rgba(216, 27, 96, 0.3);
+}
+
+#descubrir-btn:hover {
+  background-color: #c2185b;
+  transform: scale(1.03);
+}
+
+.card {
+  background: linear-gradient(145deg, #fff1f3 0%, #ffe4e8 100%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.oculto {
+  display: none;
+}
+
+.atributo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.frase {
+  font-style: italic;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  background-color: #f9e6ef;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: inline-block;
+}
+
+.foto-container {
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.foto-container img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 4px solid #fce4ec;
+  transition: transform 0.3s;
+}
+
+.foto-container img:hover {
+  transform: scale(1.02);
+}
+
+.recuerdo, .reto, .reflexion {
+  background-color: #fff3e0;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.recuerdo h4, .reto h4, .reflexion h4 {
+  color: #bf360c;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.texto-personal, .reto p, .reflexion p {
+  font-size: 1.05em;
+  color: #5d4037;
+}
+
+.reflexion textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.reflexion button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reflexion button:hover {
+  background-color: #c2185b;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #a1887f;
+  font-size: 0.9em;
+}
+
+/* Memoria */
+.memoria {
+  margin-top: 50px;
+  background-color: #fffefc;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+}
+
+.memoria h3 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #8e24aa;
+  margin-bottom: 20px;
+}
+
+.memoria-item {
+  background-color: #fce4ec;
+  border-radius: 14px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.memoria-item:hover {
+  background-color: #f8bbd0;
+}
+
+.memoria-titulo {
+  font-weight: bold;
+  color: #c2185b;
+  margin: 0;
+}
+
+.memoria-detalle {
+  display: none;
+  margin-top: 12px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.03);
+  text-align: left;
+}
+
+.memoria-detalle p {
+  margin: 8px 0;
+  color: #5d4037;
+}
+
+.memoria-detalle img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #f8bbd0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.boton-descarga {
+  display: block;
+  margin: 30px auto;
+  padding: 14px 28px;
+  background-color: #8e24aa;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 6px 16px rgba(142, 36, 170, 0.3);
+}
+
+.boton-descarga:hover {
+  background-color: #6a1b9a;
+}
+
+.oculto {
+  display: none;
+}
+#toggle-music {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggle-music:hover {
+  background-color: #c2185b;
+}
+.music-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  background-color: #d81b60;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 6px 16px rgba(216, 27, 96, 0.3);
+}
+
+#mensaje-audio {
+  text-align: center;
+  color: #b71c1c;
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 15px auto;
+  max-width: 90%;
+  padding: 10px 20px;
+  background-color: #ffe6e6;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(183, 28, 28, 0.2);
+  transition: opacity 0.5s ease;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuenta Regresiva 19-20 Meses 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+  <h1>🌿 Cuenta Regresiva de Amor 💖</h1>
+  
+  <p id="mensaje-audio" style="text-align: center; color: #b71c1c; font-style: italic;">
+    Toca la pantalla para empezar a escuchar nuestra música 💖
+  </p>
+  
+  <h2 id="dia-numero"></h2>
+  
+  <div class="progress-bar">
+    <div id="progress-fill"></div>
+  </div>
+</header>
+
+
+    <section class="descubre">
+      <button id="descubrir-btn">✨ Descubre el atributo del día ✨</button>
+    </section>
+
+    <section class="card oculto" id="tarjeta">
+      <h3 class="atributo" id="atributo"></h3>
+      <p class="frase" id="frase"></p>
+
+      <div class="foto-container">
+        <img id="foto" src="" alt="Foto de nosotros">
+      </div>
+
+      <section class="recuerdo">
+        <h4>💌 ¿Sabes cuándo vi esto en ti?</h4>
+        <p class="texto-personal" id="recuerdo"></p>
+      </section>
+
+      <section class="reflexion">
+        <h4>🖊️ Tu reflexión</h4>
+        <textarea id="reflexion-text" placeholder="Escribe aquí lo que sientes hoy..."></textarea>
+        <button id="guardar-reflexion">💾 Guardar</button>
+        <p id="mensaje-guardado"></p>
+      </section>
+
+      <section class="reto">
+        <h4>🌟 Reto del día 🌟</h4>
+        <p id="reto"></p>
+      </section>
+    </section>
+
+    <section class="memoria" id="memoria">
+      <button id="descargar-pdf" class="boton-descarga oculto">📥 Descarga tu Diario en PDF</button>
+      <h3>📖 Memoria de Atributos Descubiertos</h3>
+      <div id="memoria-lista"></div>
+    </section>
+
+    <footer>
+      <p>✨ Vuelve mañana para descubrir el siguiente atributo ✨</p>
+    </footer>
+  </div>
+
+  <!-- Modal de Foto -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <audio id="audio-fondo" loop>
+    <source src="teamo.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
