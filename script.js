@@ -19,7 +19,7 @@ const datos = [
   {
     atributo: "✨ Humildad ✨",
     frase: '"Dios enaltece a los humildes de corazón." — Lucas 14:11',
-    recuerdo: "",
+    recuerdo: "Me encanta cuando escuchas y aprendes, me sorprende la capacidad que tienes de aprender y desarrollar tan facilmente las mejoras necesarias en tu vida, yo estoy aprendiendo mucho de ti, me encanta como conces tus limitaciones, porque eso te hace mejor cada día te amo",
     foto: "dia3.jpg",
     reto: "Ahora que descubriste este nuevo atributo, tómate el día de hoy 5 minutos para leer más acerca de esto."
   },
