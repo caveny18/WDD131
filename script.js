@@ -26,16 +26,16 @@ const datos = [
   {
     atributo: "✨ Paciencia ✨",
     frase: '"La paciencia es el arte de confiar en el tiempo de Dios."',
-    recuerdo: "",
+    recuerdo: "Sabes el recuerdo que me hace amarte cada día un poco más, es el que no me te hayas ido cuando estuve mal, no te alejaste, me ayudate y te qedaste. Mi amor temereces todo quiero hacerte tan feliz como tu me haces, quiero hacerte soñar asi como tu abriste mi mente para soñar un futuro a tu lado, gracias por tu paciencia mi amor",
     foto: "dia4.jpg",
-    reto: "Ahora que descubriste este nuevo atributo, tómate el día de hoy 5 minutos para leer más acerca de esto."
+    reto: "Ahora que descubriste este nuevo atributo, tómate el día de hoy 5 minutos para leer más acerca de esto, y dale muchos besitos a tu amorcito y comparte lo que haz aprendido."
   },
   {
     atributo: "✨ Mansedumbre ✨",
     frase: '"Aprended de mí, que soy manso y humilde de corazón." — Mateo 11:29',
-    recuerdo: "",
+    recuerdo: "Sabes eres mansa, te esfuerzas por ir donde tus papas te dicen, cuestionas a vece, pero creo que para no perder la costumbre amorcito, sigue asi mi amor y sigue aun desarrollando estos maravillosos atributos te amo.",
     foto: "dia5.jpg",
-    reto: "Ahora que descubriste este nuevo atributo, tómate el día de hoy 5 minutos para leer más acerca de esto."
+    reto: "Amor no te olvides de anotar tus sentimientos, lo hice con mucho amor para tí."
   },
   {
     atributo: "✨ Gratitud ✨",
