@@ -40,9 +40,9 @@ const datos = [
   {
     atributo: "✨ Gratitud ✨",
     frase: '"Dad gracias en todo." — 1 Tesalonicenses 5:18',
-    recuerdo: "",
+    recuerdo: "Este es un atributo increible, porque nos ayuda a recordar a Dios mailove y de donde viene cada cosa, me encanta que pases tiempo con tu familia, que te esfuerzas por amarlos, gracias por esforzarte en tu llamamiento, la gratitud aparte de hablarlo y decir gracias se demuestra cuando amas lo que se te dio y eso lo veo en ti, te amo"
     foto: "dia6.jpg",
-    reto: "Ahora que descubriste este nuevo atributo, tómate el día de hoy 5 minutos para leer más acerca de esto."
+    reto: "Ahora que descubriste este nuevo atributo guapota, tómate el día de hoy 7 minutos para leer más acerca de esto, no seas falla."
   },
   {
     atributo: "✨ Esperanza ✨",
