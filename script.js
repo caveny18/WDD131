@@ -329,14 +329,33 @@ for (let i = 0; i < diaActual && i < datos.length; i++) {
   const reflexionKey = `reflexion-dia${i+1}`;
   const reflexionGuardada = localStorage.getItem(reflexionKey) || "";
 
-  detalle.innerHTML = `
-    <p><strong>✨ ${item.atributo}</strong></p>
-    <p><em>${item.frase}</em></p>
-    <p>💌 <strong>Recuerdo:</strong> ${item.recuerdo}</p>
-    <img src="${item.foto}" alt="Foto día ${i+1}">
-    <p>🌟 <strong>Reto:</strong> ${item.reto}</p>
-    <p>🖊️ <strong>Tu reflexión personal:</strong> ${reflexionGuardada ? reflexionGuardada : "(Aún no escribiste nada para este día) ❤️"}</p>
-  `;
+ detalle.innerHTML = `
+  <p><strong>✨ ${item.atributo}</strong></p>
+  <p><em>${item.frase}</em></p>
+  <p>💌 <strong>Recuerdo:</strong> ${item.recuerdo}</p>
+  <img src="${item.foto}" alt="Foto día ${i+1}">
+  <p>🌟 <strong>Reto:</strong> ${item.reto}</p>
+  <div class="reflexion-historial">
+    <h4>🖊️ Tu reflexión personal</h4>
+    <textarea id="reflexion-dia${i+1}" placeholder="Escribe aquí tu reflexión...">${reflexionGuardada}</textarea>
+    <button class="guardar-reflexion-btn" data-dia="${i+1}">💾 Guardar cambios</button>
+    <p class="mensaje-guardado" id="mensaje-guardado-dia${i+1}"></p>
+  </div>
+`;
+// Asignar evento al botón de guardar reflexión
+setTimeout(() => {
+  const btnGuardar = contenedor.querySelector(`.guardar-reflexion-btn[data-dia="${i+1}"]`);
+  const textarea = contenedor.querySelector(`#reflexion-dia${i+1}`);
+  const mensaje = contenedor.querySelector(`#mensaje-guardado-dia${i+1}`);
+
+  btnGuardar.addEventListener('click', () => {
+    const texto = textarea.value.trim();
+    localStorage.setItem(`reflexion-dia${i+1}`, texto);
+    mensaje.textContent = "✅ ¡Reflexión guardada!";
+    setTimeout(() => mensaje.textContent = "", 3000);
+  });
+}, 0);
+
 
   contenedor.appendChild(titulo);
   contenedor.appendChild(detalle);
